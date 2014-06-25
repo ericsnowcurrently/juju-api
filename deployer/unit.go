@@ -6,7 +6,7 @@ package deployer
 import (
 	"github.com/juju/names"
 
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/params"
 )
 
 // Unit represents a juju unit as seen by the deployer worker.

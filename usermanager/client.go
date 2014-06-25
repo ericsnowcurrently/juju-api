@@ -9,8 +9,8 @@ import (
 	"github.com/juju/errors"
 	"github.com/juju/names"
 
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api"
+	"github.com/juju/api/params"
 )
 
 // TODO(mattyw) 2014-03-07 bug #1288750

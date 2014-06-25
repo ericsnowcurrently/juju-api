@@ -5,18 +5,18 @@ package upgrader_test
 
 import (
 	"github.com/juju/errors"
+	jujutesting "github.com/juju/juju/juju/testing"
+	"github.com/juju/juju/state"
+	statetesting "github.com/juju/juju/state/testing"
+	"github.com/juju/juju/tools"
+	"github.com/juju/juju/version"
 	jc "github.com/juju/testing/checkers"
 	"github.com/juju/utils"
 	gc "launchpad.net/gocheck"
 
-	jujutesting "github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/upgrader"
-	statetesting "github.com/juju/juju/state/testing"
-	"github.com/juju/juju/tools"
-	"github.com/juju/juju/version"
+	"github.com/juju/api"
+	"github.com/juju/api/params"
+	"github.com/juju/api/upgrader"
 )
 
 type unitUpgraderSuite struct {

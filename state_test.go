@@ -6,12 +6,12 @@ package api_test
 import (
 	stdtesting "testing"
 
-	gc "launchpad.net/gocheck"
-
 	jujutesting "github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/network"
-	"github.com/juju/juju/state/api"
 	coretesting "github.com/juju/juju/testing"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
 )
 
 func TestAll(t *stdtesting.T) {

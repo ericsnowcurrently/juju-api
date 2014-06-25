@@ -6,14 +6,14 @@ package uniter_test
 import (
 	stdtesting "testing"
 
+	"github.com/juju/juju/juju/testing"
+	"github.com/juju/juju/state"
+	coretesting "github.com/juju/juju/testing"
 	"github.com/juju/utils"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/uniter"
-	coretesting "github.com/juju/juju/testing"
+	"github.com/juju/api"
+	"github.com/juju/api/uniter"
 )
 
 // NOTE: This suite is intended for embedding into other suites,

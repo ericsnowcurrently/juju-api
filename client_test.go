@@ -18,14 +18,14 @@ import (
 	"code.google.com/p/go.net/websocket"
 	"github.com/juju/charm"
 	charmtesting "github.com/juju/charm/testing"
+	"github.com/juju/juju/constraints"
+	jujutesting "github.com/juju/juju/juju/testing"
 	"github.com/juju/loggo"
 	jc "github.com/juju/testing/checkers"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/constraints"
-	jujutesting "github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api"
+	"github.com/juju/api/params"
 )
 
 type clientSuite struct {

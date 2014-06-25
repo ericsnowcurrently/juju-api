@@ -4,14 +4,14 @@
 package firewaller_test
 
 import (
+	"github.com/juju/juju/instance"
+	"github.com/juju/juju/state"
+	statetesting "github.com/juju/juju/state/testing"
 	jc "github.com/juju/testing/checkers"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/instance"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/firewaller"
-	"github.com/juju/juju/state/api/params"
-	statetesting "github.com/juju/juju/state/testing"
+	"github.com/juju/api/firewaller"
+	"github.com/juju/api/params"
 )
 
 type machineSuite struct {

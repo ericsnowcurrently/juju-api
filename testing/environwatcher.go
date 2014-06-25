@@ -4,14 +4,14 @@
 package testing
 
 import (
-	jc "github.com/juju/testing/checkers"
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/environs"
 	"github.com/juju/juju/environs/config"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/watcher"
 	statetesting "github.com/juju/juju/state/testing"
+	jc "github.com/juju/testing/checkers"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api/watcher"
 )
 
 const (

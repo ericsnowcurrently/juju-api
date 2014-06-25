@@ -6,18 +6,18 @@ package deployer_test
 import (
 	stdtesting "testing"
 
-	jc "github.com/juju/testing/checkers"
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/deployer"
-	"github.com/juju/juju/state/api/params"
-	apitesting "github.com/juju/juju/state/api/testing"
 	statetesting "github.com/juju/juju/state/testing"
 	coretesting "github.com/juju/juju/testing"
+	jc "github.com/juju/testing/checkers"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
+	"github.com/juju/api/deployer"
+	"github.com/juju/api/params"
+	apitesting "github.com/juju/api/testing"
 )
 
 func TestAll(t *stdtesting.T) {

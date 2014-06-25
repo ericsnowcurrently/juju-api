@@ -6,13 +6,13 @@ package provisioner
 import (
 	"fmt"
 
+	"github.com/juju/juju/tools"
 	"github.com/juju/names"
 
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/common"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
-	"github.com/juju/juju/tools"
+	"github.com/juju/api/base"
+	"github.com/juju/api/common"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 // State provides access to the Machiner API facade.

@@ -12,16 +12,16 @@ import (
 	"time"
 
 	"code.google.com/p/go.net/websocket"
+	"github.com/juju/juju/cert"
+	"github.com/juju/juju/network"
+	"github.com/juju/juju/rpc"
+	"github.com/juju/juju/rpc/jsoncodec"
 	"github.com/juju/loggo"
 	"github.com/juju/names"
 	"github.com/juju/utils"
 	"github.com/juju/utils/parallel"
 
-	"github.com/juju/juju/cert"
-	"github.com/juju/juju/network"
-	"github.com/juju/juju/rpc"
-	"github.com/juju/juju/rpc/jsoncodec"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/params"
 )
 
 var logger = loggo.GetLogger("juju.api")
@@ -30,6 +30,7 @@ var logger = loggo.GetLogger("juju.api")
 // will run. It's a variable so it can be changed in tests.
 var PingPeriod = 1 * time.Minute
 
+// XXX Rename to RPCServerState?
 type State struct {
 	client *rpc.Conn
 	conn   *websocket.Conn

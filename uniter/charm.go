@@ -10,7 +10,7 @@ import (
 	"github.com/juju/charm"
 	"github.com/juju/utils"
 
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/params"
 )
 
 // This module implements a subset of the interface provided by

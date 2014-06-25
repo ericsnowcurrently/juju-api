@@ -7,9 +7,10 @@ import (
 	"fmt"
 
 	"github.com/juju/juju/network"
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
+
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 const rsyslogAPI = "Rsyslog"

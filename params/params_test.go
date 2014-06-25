@@ -8,13 +8,13 @@ import (
 	"testing"
 
 	"github.com/juju/charm"
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/constraints"
 	"github.com/juju/juju/instance"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/params"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api/params"
 )
 
 // TestPackage integrates the tests into gotest.

@@ -18,15 +18,15 @@ import (
 	"code.google.com/p/go.net/websocket"
 	"github.com/juju/charm"
 	"github.com/juju/errors"
-	"github.com/juju/loggo"
-	"github.com/juju/utils"
-
 	"github.com/juju/juju/constraints"
 	"github.com/juju/juju/instance"
 	"github.com/juju/juju/network"
-	"github.com/juju/juju/state/api/params"
 	"github.com/juju/juju/tools"
 	"github.com/juju/juju/version"
+	"github.com/juju/loggo"
+	"github.com/juju/utils"
+
+	"github.com/juju/api/params"
 )
 
 // Client represents the client-accessible part of the state.

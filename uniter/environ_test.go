@@ -4,10 +4,10 @@
 package uniter_test
 
 import (
+	"github.com/juju/juju/state"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/uniter"
+	"github.com/juju/api/uniter"
 )
 
 type environSuite struct {

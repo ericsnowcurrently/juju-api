@@ -8,19 +8,19 @@ import (
 	stdtesting "testing"
 
 	"github.com/juju/errors"
+	"github.com/juju/juju/environs"
+	"github.com/juju/juju/juju/testing"
+	"github.com/juju/juju/mongo"
+	"github.com/juju/juju/state"
+	apiserveragent "github.com/juju/juju/state/apiserver/agent"
+	coretesting "github.com/juju/juju/testing"
 	"github.com/juju/names"
 	jc "github.com/juju/testing/checkers"
 	"labix.org/v2/mgo"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/environs"
-	"github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/mongo"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
-	apiserveragent "github.com/juju/juju/state/apiserver/agent"
-	coretesting "github.com/juju/juju/testing"
+	"github.com/juju/api"
+	"github.com/juju/api/params"
 )
 
 func TestAll(t *stdtesting.T) {

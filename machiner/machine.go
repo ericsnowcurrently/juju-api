@@ -4,12 +4,12 @@
 package machiner
 
 import (
+	"github.com/juju/juju/network"
 	"github.com/juju/names"
 
-	"github.com/juju/juju/network"
-	"github.com/juju/juju/state/api/common"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
+	"github.com/juju/api/common"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 // Machine represents a juju machine as seen by a machiner worker.

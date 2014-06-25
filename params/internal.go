@@ -6,13 +6,12 @@ package params
 import (
 	"time"
 
-	"github.com/juju/utils/exec"
-
 	"github.com/juju/juju/constraints"
 	"github.com/juju/juju/instance"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/tools"
 	"github.com/juju/juju/version"
+	"github.com/juju/utils/exec"
 )
 
 // MachineContainersParams holds the arguments for making a SetSupportedContainers

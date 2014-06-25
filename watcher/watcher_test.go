@@ -7,15 +7,15 @@ import (
 	stdtesting "testing"
 	"time"
 
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
 	statetesting "github.com/juju/juju/state/testing"
 	coretesting "github.com/juju/juju/testing"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 func TestAll(t *stdtesting.T) {

@@ -6,8 +6,8 @@ package common
 import (
 	"fmt"
 
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
 )
 
 // Life requests the life cycle of the given entity from the given

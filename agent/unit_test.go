@@ -6,15 +6,15 @@ package agent_test
 import (
 	"fmt"
 
+	"github.com/juju/juju/juju/testing"
+	"github.com/juju/juju/state"
 	"github.com/juju/names"
 	jc "github.com/juju/testing/checkers"
 	"github.com/juju/utils"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api"
+	"github.com/juju/api/params"
 )
 
 var _ = gc.Suite(&unitSuite{})

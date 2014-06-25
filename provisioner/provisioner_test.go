@@ -7,11 +7,6 @@ import (
 	stdtesting "testing"
 
 	"github.com/juju/errors"
-	"github.com/juju/names"
-	jc "github.com/juju/testing/checkers"
-	"github.com/juju/utils"
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/constraints"
 	"github.com/juju/juju/container"
 	"github.com/juju/juju/instance"
@@ -19,14 +14,19 @@ import (
 	"github.com/juju/juju/mongo"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/provisioner"
-	apitesting "github.com/juju/juju/state/api/testing"
 	statetesting "github.com/juju/juju/state/testing"
 	coretesting "github.com/juju/juju/testing"
 	"github.com/juju/juju/tools"
 	"github.com/juju/juju/version"
+	"github.com/juju/names"
+	jc "github.com/juju/testing/checkers"
+	"github.com/juju/utils"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
+	"github.com/juju/api/params"
+	"github.com/juju/api/provisioner"
+	apitesting "github.com/juju/api/testing"
 )
 
 func TestAll(t *stdtesting.T) {

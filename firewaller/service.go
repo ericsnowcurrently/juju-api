@@ -8,9 +8,9 @@ import (
 
 	"github.com/juju/names"
 
-	"github.com/juju/juju/state/api/common"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
+	"github.com/juju/api/common"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 // Service represents the state of a service.

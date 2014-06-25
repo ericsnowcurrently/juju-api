@@ -6,9 +6,9 @@ package common
 import (
 	"fmt"
 
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 // Watch starts a NotifyWatcher for the entity with the specified tag.

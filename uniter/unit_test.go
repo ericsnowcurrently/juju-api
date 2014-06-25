@@ -8,14 +8,14 @@ import (
 
 	"github.com/juju/charm"
 	"github.com/juju/errors"
+	"github.com/juju/juju/network"
+	"github.com/juju/juju/state"
+	statetesting "github.com/juju/juju/state/testing"
 	jc "github.com/juju/testing/checkers"
 	gc "launchpad.net/gocheck"
 
-	"github.com/juju/juju/network"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/uniter"
-	statetesting "github.com/juju/juju/state/testing"
+	"github.com/juju/api/params"
+	"github.com/juju/api/uniter"
 )
 
 type unitSuite struct {

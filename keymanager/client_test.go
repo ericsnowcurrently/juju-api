@@ -6,16 +6,16 @@ package keymanager_test
 import (
 	"strings"
 
-	gc "launchpad.net/gocheck"
-
 	jujutesting "github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/keymanager"
-	"github.com/juju/juju/state/api/params"
 	keymanagerserver "github.com/juju/juju/state/apiserver/keymanager"
 	keymanagertesting "github.com/juju/juju/state/apiserver/keymanager/testing"
 	"github.com/juju/juju/utils/ssh"
 	sshtesting "github.com/juju/juju/utils/ssh/testing"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api/keymanager"
+	"github.com/juju/api/params"
 )
 
 type keymanagerSuite struct {

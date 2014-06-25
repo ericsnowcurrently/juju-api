@@ -4,10 +4,10 @@
 package environment_test
 
 import (
+	jujutesting "github.com/juju/juju/juju/testing"
 	gc "launchpad.net/gocheck"
 
-	jujutesting "github.com/juju/juju/juju/testing"
-	apitesting "github.com/juju/juju/state/api/testing"
+	apitesting "github.com/juju/api/testing"
 )
 
 type environmentSuite struct {

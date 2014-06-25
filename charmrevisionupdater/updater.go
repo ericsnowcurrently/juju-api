@@ -4,8 +4,8 @@
 package charmrevisionupdater
 
 import (
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
 )
 
 // State provides access to a worker's view of the state.

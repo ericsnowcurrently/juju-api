@@ -4,8 +4,8 @@
 package environment
 
 import (
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/common"
+	"github.com/juju/api/base"
+	"github.com/juju/api/common"
 )
 
 const apiName = "Environment"

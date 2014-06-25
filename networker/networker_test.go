@@ -4,17 +4,17 @@
 package networker_test
 
 import (
-	jc "github.com/juju/testing/checkers"
-	"github.com/juju/utils"
-	gc "launchpad.net/gocheck"
-
 	"github.com/juju/juju/instance"
 	"github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/networker"
-	"github.com/juju/juju/state/api/params"
+	jc "github.com/juju/testing/checkers"
+	"github.com/juju/utils"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
+	"github.com/juju/api/networker"
+	"github.com/juju/api/params"
 )
 
 type networkerSuite struct {

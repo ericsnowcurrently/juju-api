@@ -5,13 +5,13 @@ package charmrevisionupdater_test
 
 import (
 	"github.com/juju/charm"
+	jujutesting "github.com/juju/juju/juju/testing"
+	"github.com/juju/juju/state"
+	"github.com/juju/juju/state/apiserver/charmrevisionupdater/testing"
 	"github.com/juju/utils"
 	gc "launchpad.net/gocheck"
 
-	jujutesting "github.com/juju/juju/juju/testing"
-	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api/charmrevisionupdater"
-	"github.com/juju/juju/state/apiserver/charmrevisionupdater/testing"
+	"github.com/juju/api/charmrevisionupdater"
 )
 
 type versionUpdaterSuite struct {

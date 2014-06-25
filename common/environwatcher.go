@@ -5,9 +5,10 @@ package common
 
 import (
 	"github.com/juju/juju/environs/config"
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
-	"github.com/juju/juju/state/api/watcher"
+
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
+	"github.com/juju/api/watcher"
 )
 
 // EnvironWatcher provides common client-side API functions

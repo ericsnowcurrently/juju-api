@@ -9,9 +9,9 @@ import (
 	"github.com/juju/charm"
 	"github.com/juju/names"
 
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/common"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/base"
+	"github.com/juju/api/common"
+	"github.com/juju/api/params"
 )
 
 const uniterFacade = "Uniter"

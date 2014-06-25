@@ -9,8 +9,8 @@ import (
 	"github.com/juju/loggo"
 	"launchpad.net/tomb"
 
-	"github.com/juju/juju/state/api/base"
-	"github.com/juju/juju/state/api/params"
+	"github.com/juju/api/base"
+	"github.com/juju/api/params"
 )
 
 var logger = loggo.GetLogger("juju.api.watcher")

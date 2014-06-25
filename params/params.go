@@ -10,13 +10,12 @@ import (
 	"time"
 
 	"github.com/juju/charm"
-	"github.com/juju/utils/proxy"
-
 	"github.com/juju/juju/constraints"
 	"github.com/juju/juju/instance"
 	"github.com/juju/juju/network"
 	"github.com/juju/juju/utils/ssh"
 	"github.com/juju/juju/version"
+	"github.com/juju/utils/proxy"
 )
 
 // Entity identifies a single entity.

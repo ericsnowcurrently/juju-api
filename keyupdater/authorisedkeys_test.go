@@ -4,13 +4,13 @@
 package keyupdater_test
 
 import (
-	gc "launchpad.net/gocheck"
-
 	jujutesting "github.com/juju/juju/juju/testing"
 	"github.com/juju/juju/state"
-	"github.com/juju/juju/state/api"
-	"github.com/juju/juju/state/api/keyupdater"
 	"github.com/juju/juju/state/testing"
+	gc "launchpad.net/gocheck"
+
+	"github.com/juju/api"
+	"github.com/juju/api/keyupdater"
 )
 
 type keyupdaterSuite struct {
